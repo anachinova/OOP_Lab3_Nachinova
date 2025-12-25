@@ -56,16 +56,16 @@ public class GameCharacter
     public bool IsAlive => Health > 0;
     public GameCharacter() : this("Unknown", CharacterClass.Warrior)
     {
-        Console.WriteLine("✔ Викликано конструктор: GameCharacter()");
+        Console.WriteLine("Викликано конструктор: GameCharacter()");
     }
     public GameCharacter(string name, CharacterClass characterClass) : this(name, characterClass, 1, 100)
     {
-        Console.WriteLine("✔ Викликано конструктор: GameCharacter(string, CharacterClass)");
+        Console.WriteLine("Викликано конструктор: GameCharacter(string, CharacterClass)");
     }
 
     public GameCharacter(string name, CharacterClass characterClass, int level, int health)
     {
-        Console.WriteLine("✔ Викликано конструктор: GameCharacter(string, CharacterClass, int, int)");
+        Console.WriteLine("Викликано конструктор: GameCharacter(string, CharacterClass, int, int)");
 
         Name = name;
         CharacterClass = characterClass;
